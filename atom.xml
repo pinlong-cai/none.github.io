@@ -46,35 +46,6 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2017/10/15/hello-world/"/>
-    <id>http://yoursite.com/2017/10/15/hello-world/</id>
-    <published>2017-10-15T08:52:15.453Z</published>
-    <updated>2017-03-03T01:46:41.689Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a><br><a id="more"></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot;&gt;Writing&lt;/a&gt;&lt;br&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>天上西藏 大美于行</title>
     <link href="http://yoursite.com/2017/10/15/%E8%A5%BF%E8%97%8F%E4%B9%8B%E8%A1%8C-201710/"/>
     <id>http://yoursite.com/2017/10/15/西藏之行-201710/</id>
@@ -646,6 +617,41 @@
     
     
       <category term="机器学习" scheme="http://yoursite.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>心情 2017.6.5</title>
+    <link href="http://yoursite.com/2017/06/05/%E5%BF%83%E6%83%85-2017-6-5/"/>
+    <id>http://yoursite.com/2017/06/05/心情-2017-6-5/</id>
+    <published>2017-06-05T07:51:50.000Z</published>
+    <updated>2017-06-05T10:25:56.021Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="\images\20170605\grain-in-ear.jpg" alt="grain-in-ear"></p>
+<blockquote>
+<p>螳螂生；鹏始鸣；反舌无声。——芒种三候</p>
+</blockquote>
+<p>芒种是南方地区农作物收获的时节<br>有芒的麦子快收，有芒的稻子可种<br>金灿灿的稻田，是阳光和雨露的赠予<br>更是辛勤耕耘者的劳动结晶<br>然则，新的种子也即将播下<br>依然可以憧憬着来日的丰收<br><a id="more"></a></p>
+<p>六月叩响了盛夏的大门<br>知了的叫声此起披伏<br>夏雨冲洗的清凉让人仿若深秋<br>却也免遭多少烈日的毒害<br>一年一度的高考按期而至<br>为的是检验学子们多年读书的成果<br>同时也是无数人走向大世界的一张船票</p>
+<p>人们总是徘徊于各种起点和终点<br>殊不知，人生的旅程是一场无尽的马拉松<br>所谓的终点只不过一块里程碑<br>同时又是下一阶段的起点<br>有些人会流连于自己以往的些许成就<br>驻足于大大小小里程碑而耽搁了时间<br>龟兔赛跑，持之以恒就是赢家</p>
+<p>依稀记得那年，茫茫然地通过了高考的洗礼<br>之后在多少夜里为落榜噩梦而惊醒<br>想起来，还是年少经历太少<br>也在多少美梦中憧憬未来的种种美好<br>其实大多只是幻想<br>在未知世界前，不考学习靠空想就是笑话<br>只有胸有成竹才能真正驾驭自己</p>
+<p>古人云：一分耕耘一分收获<br>世上路太多，康庄大道也很多<br>认定对方向，不顾虑太多<br>所有的汗水都会结晶成硕果<br>不学不做，安于平庸，已然是棺材里的人生</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;\images\20170605\grain-in-ear.jpg&quot; alt=&quot;grain-in-ear&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;螳螂生；鹏始鸣；反舌无声。——芒种三候&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;芒种是南方地区农作物收获的时节&lt;br&gt;有芒的麦子快收，有芒的稻子可种&lt;br&gt;金灿灿的稻田，是阳光和雨露的赠予&lt;br&gt;更是辛勤耕耘者的劳动结晶&lt;br&gt;然则，新的种子也即将播下&lt;br&gt;依然可以憧憬着来日的丰收&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="叙事" scheme="http://yoursite.com/tags/%E5%8F%99%E4%BA%8B/"/>
     
   </entry>
   
