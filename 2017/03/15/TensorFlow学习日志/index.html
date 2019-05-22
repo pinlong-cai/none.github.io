@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>TensorFlow学习日志 | Peter&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="写在前面经过前一两周调试、熟悉深度学习设备，再加上实验室的改造，硬件差不多完事了在骆炜和瑞宇相继离开之后，决定由我来搞深度学习，临阵磨刀，肯定先看书啊组长买回两本深度学习的典型框架的书，分别是关于TensorFlow 和 Caffe本着对Python的不离不弃（其实是不想从头去看C/C++），决定入手TensorFlow这本《TensorFlow实战》是2017年2月刚上市的，好评如潮，值得一看">
+<meta name="keywords" content="知识积累,TensorFlow">
 <meta property="og:type" content="article">
 <meta property="og:title" content="TensorFlow学习日志">
 <meta property="og:url" content="http://yoursite.com/2017/03/15/TensorFlow学习日志/index.html">
-<meta property="og:site_name" content="Peter's Blog">
+<meta property="og:site_name" content="Peter&#39;s Blog">
 <meta property="og:description" content="写在前面经过前一两周调试、熟悉深度学习设备，再加上实验室的改造，硬件差不多完事了在骆炜和瑞宇相继离开之后，决定由我来搞深度学习，临阵磨刀，肯定先看书啊组长买回两本深度学习的典型框架的书，分别是关于TensorFlow 和 Caffe本着对Python的不离不弃（其实是不想从头去看C/C++），决定入手TensorFlow这本《TensorFlow实战》是2017年2月刚上市的，好评如潮，值得一看">
-<meta property="og:image" content="http://yoursite.com/\images\20170315\tensorflow.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170315\AutoEncoder.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170315\Images-recontruction.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170315\全连接（左）与局部连接（右）.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170315\LeNet5结构示意图.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170315\TensorBoard界面.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170315\计算图.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170315\数据可视化.jpg">
-<meta property="og:updated_time" content="2017-03-16T12:06:01.381Z">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/images/20170315/tensorflow.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170315/AutoEncoder.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170315/Images-recontruction.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170315/全连接（左）与局部连接（右）.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170315/LeNet5结构示意图.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170315/TensorBoard界面.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170315/计算图.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170315/数据可视化.jpg">
+<meta property="og:updated_time" content="2019-05-22T08:06:35.971Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TensorFlow学习日志">
 <meta name="twitter:description" content="写在前面经过前一两周调试、熟悉深度学习设备，再加上实验室的改造，硬件差不多完事了在骆炜和瑞宇相继离开之后，决定由我来搞深度学习，临阵磨刀，肯定先看书啊组长买回两本深度学习的典型框架的书，分别是关于TensorFlow 和 Caffe本着对Python的不离不弃（其实是不想从头去看C/C++），决定入手TensorFlow这本《TensorFlow实战》是2017年2月刚上市的，好评如潮，值得一看">
-<meta name="twitter:image" content="http://yoursite.com/\images\20170315\tensorflow.jpg">
+<meta name="twitter:image" content="http://yoursite.com/images/20170315/tensorflow.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Peter&#39;s Blog" type="application/atom+xml">
   
@@ -48,7 +50,7 @@
   
 
 </head>
-
+</html>
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -184,7 +186,7 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="\images\20170315\tensorflow.jpg" alt="&#39;Tensoflow&#39;"></p>
 <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>经过前一两周调试、熟悉深度学习设备，再加上实验室的改造，硬件差不多完事了<br>在骆炜和瑞宇相继离开之后，决定由我来搞深度学习，临阵磨刀，肯定先看书啊<br>组长买回两本深度学习的典型框架的书，分别是关于TensorFlow 和 Caffe<br>本着对Python的不离不弃（其实是不想从头去看C/C++），决定入手TensorFlow<br>这本《TensorFlow实战》是2017年2月刚上市的，好评如潮，值得一看<br><a id="more"></a></p>
 <h2 id="TensorFlow简介"><a href="#TensorFlow简介" class="headerlink" title="TensorFlow简介"></a>TensorFlow简介</h2><p>TensorFlow是由Google公司开发的开源框架，提供实现机器学习算法接口<br>TensroFlow是由Google Brain团队基于第一代分布式机器学习框架DistBelief（未开源）上开发的<br>2015.11在Github上开源，2016.4补充分布式版本，2017.1发布1.0版本<br>TensorFlow官网：www.tensorflow.org<br>GitHub: github.com/tensorflow/tensorflow<br>模型仓库：github.com/tensorflow/models<br>前端支持：Python、C++、Go、Java等<br>后端支持：C++、CUDA<br>适合众多异构系统：Android、iphone、普通CPU、大规模GPU<br>封装算法：深度学习、线性回归、逻辑回归、随机森林<br>TensorFlow特点之一是用数据流式图来规划计算流程，即计算图</p>
-<h2 id="Tensorflow安装"><a href="#Tensorflow安装" class="headerlink" title="Tensorflow安装"></a>Tensorflow安装</h2><p>1、安装Anaconda (www.continuum.io/downloads)，内含Python应用程序及大量实用Python库<br>2、CPU/GPU版本的TensorFlow库安装，从Python官网<a href="https://pypi.python.org/pypi" target="_blank" rel="external">https://pypi.python.org/pypi</a> 找对应版本<br>3、安装CUDA，从NVIDIA CUDA官网<a href="http://developer.nvidia.com/cuda-toolkit" target="_blank" rel="external">http://developer.nvidia.com/cuda-toolkit</a> 下载<br>4、从<a href="http://developer.nvidia.com/rdp/cudnn-download" target="_blank" rel="external">http://developer.nvidia.com/rdp/cudnn-download</a> 下载cuDNN，解压后有3个文件<br>&nbsp;&nbsp;&nbsp;(1) 将cudnn.h放入CUDA的tookit安装目录的include文件夹中<br>&nbsp;&nbsp;&nbsp;(2) cudnn.dll放入bin文件夹中<br>&nbsp;&nbsp;&nbsp;(3) cudnn.lib放入lib/x64文件夹中</p>
+<h2 id="Tensorflow安装"><a href="#Tensorflow安装" class="headerlink" title="Tensorflow安装"></a>Tensorflow安装</h2><p>1、安装Anaconda (www.continuum.io/downloads)，内含Python应用程序及大量实用Python库<br>2、CPU/GPU版本的TensorFlow库安装，从Python官网<a href="https://pypi.python.org/pypi" target="_blank" rel="noopener">https://pypi.python.org/pypi</a> 找对应版本<br>3、安装CUDA，从NVIDIA CUDA官网<a href="http://developer.nvidia.com/cuda-toolkit" target="_blank" rel="noopener">http://developer.nvidia.com/cuda-toolkit</a> 下载<br>4、从<a href="http://developer.nvidia.com/rdp/cudnn-download" target="_blank" rel="noopener">http://developer.nvidia.com/rdp/cudnn-download</a> 下载cuDNN，解压后有3个文件<br>&nbsp;&nbsp;&nbsp;(1) 将cudnn.h放入CUDA的tookit安装目录的include文件夹中<br>&nbsp;&nbsp;&nbsp;(2) cudnn.dll放入bin文件夹中<br>&nbsp;&nbsp;&nbsp;(3) cudnn.lib放入lib/x64文件夹中</p>
 <p>使用TensorFlow-GPU版本运行的话，如果CUDA文件成功加载的话会有下面的提示：</p>
 <pre><code>I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stre
 am_executor\dso_loader.cc:135] successfully opened CUDA library cublas64_80.dll locally
@@ -212,7 +214,7 @@ I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core
 
 </li>
 </ol>
-<p>使用手写数字数据库（MNIST：Mixed National Institute of standards and Technology database）<br>Softmax Regrssion实际上是感知器模型，线性分类器，对手写数字的分类效果精度大约在<strong>92%</strong><br>（具体程序参见<a href="https://github.com/peter-cai/TensorFlowInAction" target="_blank" rel="external">https://github.com/peter-cai/TensorFlowInAction</a> ，下同）</p>
+<p>使用手写数字数据库（MNIST：Mixed National Institute of standards and Technology database）<br>Softmax Regrssion实际上是感知器模型，线性分类器，对手写数字的分类效果精度大约在<strong>92%</strong><br>（具体程序参见<a href="https://github.com/peter-cai/TensorFlowInAction" target="_blank" rel="noopener">https://github.com/peter-cai/TensorFlowInAction</a> ，下同）</p>
 <ol>
 <li><font size="4"><strong>AutoEncoder</strong></font></li>
 </ol>
@@ -271,6 +273,21 @@ I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">知识积累</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">TensorFlow</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -442,6 +459,18 @@ I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">知识积累</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">数据挖掘</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">统计分析</a>
               </li>
              
@@ -454,11 +483,19 @@ I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">数据挖掘</a>
+                <a href="javascript:void(0)" class="js-tag color1">TensorFlow</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+                <a href="javascript:void(0)" class="js-tag color3">转载</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">生活</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -482,11 +519,7 @@ I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">转载</a>
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -494,23 +527,11 @@ I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">个人叙事</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">游记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">生活</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">叙事</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">心情</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -522,7 +543,7 @@ I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br/>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            缺失模块。<br>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
             2、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:

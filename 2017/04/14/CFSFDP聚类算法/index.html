@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>CFSFDP聚类算法 | Peter&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="聚类分析又称聚类，是把一个数据集合划分为多个集群（cluster）的过程，使得相同集群内的数据之间具有相似性，不同集群的数据之间具有差异性。聚类是数据挖掘、统计分析的主要任务之一，应用于机器学习、模式识别、图像处理、信息检索、生物信息、数据压缩和计算机图像等领域。（From 维基百科）
-
-1  聚类算法总结常用的聚类算法包括：（1）启发式分割算法：起始确定K个中心点，用距离公式来判断数据点归属">
+  <meta name="description" content="聚类分析又称聚类，是把一个数据集合划分为多个集群（cluster）的过程，使得相同集群内的数据之间具有相似性，不同集群的数据之间具有差异性。聚类是数据挖掘、统计分析的主要任务之一，应用于机器学习、模式识别、图像处理、信息检索、生物信息、数据压缩和计算机图像等领域。（From 维基百科）  1  聚类算法总结常用的聚类算法包括：（1）启发式分割算法：起始确定K个中心点，用距离公式来判断数据点归属">
+<meta name="keywords" content="知识积累,数据挖掘,算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CFSFDP聚类算法">
 <meta property="og:url" content="http://yoursite.com/2017/04/14/CFSFDP聚类算法/index.html">
-<meta property="og:site_name" content="Peter's Blog">
-<meta property="og:description" content="聚类分析又称聚类，是把一个数据集合划分为多个集群（cluster）的过程，使得相同集群内的数据之间具有相似性，不同集群的数据之间具有差异性。聚类是数据挖掘、统计分析的主要任务之一，应用于机器学习、模式识别、图像处理、信息检索、生物信息、数据压缩和计算机图像等领域。（From 维基百科）
-
-1  聚类算法总结常用的聚类算法包括：（1）启发式分割算法：起始确定K个中心点，用距离公式来判断数据点归属">
-<meta property="og:image" content="http://yoursite.com/\images\20170414\Clustering.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170414\图1.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170414\图2.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170414\图3.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170414\图4.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170414\图5.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170414\图6.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170414\图7.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170414\图8.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170414\图9.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170414\图10.jpg">
-<meta property="og:updated_time" content="2017-04-14T14:09:19.164Z">
+<meta property="og:site_name" content="Peter&#39;s Blog">
+<meta property="og:description" content="聚类分析又称聚类，是把一个数据集合划分为多个集群（cluster）的过程，使得相同集群内的数据之间具有相似性，不同集群的数据之间具有差异性。聚类是数据挖掘、统计分析的主要任务之一，应用于机器学习、模式识别、图像处理、信息检索、生物信息、数据压缩和计算机图像等领域。（From 维基百科）  1  聚类算法总结常用的聚类算法包括：（1）启发式分割算法：起始确定K个中心点，用距离公式来判断数据点归属">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/images/20170414/Clustering.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170414/图1.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170414/图2.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170414/图3.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170414/图4.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170414/图5.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170414/图6.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170414/图7.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170414/图8.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170414/图9.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170414/图10.jpg">
+<meta property="og:updated_time" content="2019-05-22T08:05:56.832Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CFSFDP聚类算法">
-<meta name="twitter:description" content="聚类分析又称聚类，是把一个数据集合划分为多个集群（cluster）的过程，使得相同集群内的数据之间具有相似性，不同集群的数据之间具有差异性。聚类是数据挖掘、统计分析的主要任务之一，应用于机器学习、模式识别、图像处理、信息检索、生物信息、数据压缩和计算机图像等领域。（From 维基百科）
-
-1  聚类算法总结常用的聚类算法包括：（1）启发式分割算法：起始确定K个中心点，用距离公式来判断数据点归属">
-<meta name="twitter:image" content="http://yoursite.com/\images\20170414\Clustering.jpg">
+<meta name="twitter:description" content="聚类分析又称聚类，是把一个数据集合划分为多个集群（cluster）的过程，使得相同集群内的数据之间具有相似性，不同集群的数据之间具有差异性。聚类是数据挖掘、统计分析的主要任务之一，应用于机器学习、模式识别、图像处理、信息检索、生物信息、数据压缩和计算机图像等领域。（From 维基百科）  1  聚类算法总结常用的聚类算法包括：（1）启发式分割算法：起始确定K个中心点，用距离公式来判断数据点归属">
+<meta name="twitter:image" content="http://yoursite.com/images/20170414/Clustering.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Peter&#39;s Blog" type="application/atom+xml">
   
@@ -57,7 +53,7 @@
   
 
 </head>
-
+</html>
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -253,6 +249,10 @@
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">知识积累</a>
+        		</li>
+      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数据挖掘</a>
         		</li>
@@ -456,6 +456,18 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">知识积累</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">数据挖掘</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">统计分析</a>
               </li>
              
@@ -468,11 +480,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">数据挖掘</a>
+                <a href="javascript:void(0)" class="js-tag color1">TensorFlow</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+                <a href="javascript:void(0)" class="js-tag color3">转载</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">生活</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -496,11 +516,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">转载</a>
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -508,23 +524,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">个人叙事</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">游记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">生活</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">叙事</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">心情</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -536,7 +540,7 @@ MathJax.Hub.Queue(function() {
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br/>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            缺失模块。<br>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
             2、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:

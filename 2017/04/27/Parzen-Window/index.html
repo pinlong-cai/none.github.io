@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>概率密度估计之Parzen Window | Peter&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="kernel density estimation是在概率论中用来估计未知的密度函数，属于非参数检验方法之一，由Rosenblatt (1955)和Emanuel Parzen(1962)提出，又名Parzen窗（Parzen window）本文翻译自英国雷丁大学（Reading University）Xia Hong老师的讲义材料">
+<meta name="keywords" content="知识积累,统计分析">
 <meta property="og:type" content="article">
 <meta property="og:title" content="概率密度估计之Parzen Window">
 <meta property="og:url" content="http://yoursite.com/2017/04/27/Parzen-Window/index.html">
-<meta property="og:site_name" content="Peter's Blog">
+<meta property="og:site_name" content="Peter&#39;s Blog">
 <meta property="og:description" content="kernel density estimation是在概率论中用来估计未知的密度函数，属于非参数检验方法之一，由Rosenblatt (1955)和Emanuel Parzen(1962)提出，又名Parzen窗（Parzen window）本文翻译自英国雷丁大学（Reading University）Xia Hong老师的讲义材料">
-<meta property="og:image" content="http://yoursite.com/\images\20170427\统计寓于生活.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170427\Guassian-Function.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170427\2D-Gaussian-pdf.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170427\Parzen-Window.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170427\lines-of-data-points.jpg">
-<meta property="og:image" content="http://yoursite.com/\images\20170427\line-of-pdf.jpg">
-<meta property="og:updated_time" content="2017-04-27T13:46:26.198Z">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/images/20170427/统计寓于生活.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170427/Guassian-Function.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170427/2D-Gaussian-pdf.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170427/Parzen-Window.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170427/lines-of-data-points.jpg">
+<meta property="og:image" content="http://yoursite.com/images/20170427/line-of-pdf.jpg">
+<meta property="og:updated_time" content="2019-05-22T08:05:38.051Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="概率密度估计之Parzen Window">
 <meta name="twitter:description" content="kernel density estimation是在概率论中用来估计未知的密度函数，属于非参数检验方法之一，由Rosenblatt (1955)和Emanuel Parzen(1962)提出，又名Parzen窗（Parzen window）本文翻译自英国雷丁大学（Reading University）Xia Hong老师的讲义材料">
-<meta name="twitter:image" content="http://yoursite.com/\images\20170427\统计寓于生活.jpg">
+<meta name="twitter:image" content="http://yoursite.com/images/20170427/统计寓于生活.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Peter&#39;s Blog" type="application/atom+xml">
   
@@ -46,7 +48,7 @@
   
 
 </head>
-
+</html>
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -181,7 +183,7 @@
       
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="\images\20170427\统计寓于生活.jpg" alt="&#39;统计寓于生活&#39;"></p>
 <blockquote>
-<p>kernel density estimation是在概率论中用来估计未知的密度函数，属于非参数检验方法之一，由Rosenblatt (1955)和Emanuel Parzen(1962)提出，又名Parzen窗（Parzen window）<br>本文翻译自英国雷丁大学（Reading University）Xia Hong老师的<a href="http://www.personal.rdg.ac.uk/~sis01xh/teaching/CY2D2/Pattern2.pdf" target="_blank" rel="external">讲义材料</a></p>
+<p>kernel density estimation是在概率论中用来估计未知的密度函数，属于非参数检验方法之一，由Rosenblatt (1955)和Emanuel Parzen(1962)提出，又名Parzen窗（Parzen window）<br>本文翻译自英国雷丁大学（Reading University）Xia Hong老师的<a href="http://www.personal.rdg.ac.uk/~sis01xh/teaching/CY2D2/Pattern2.pdf" target="_blank" rel="noopener">讲义材料</a></p>
 </blockquote>
 <a id="more"></a>
 <h2 id="概率密度函数"><a href="#概率密度函数" class="headerlink" title="概率密度函数"></a>概率密度函数</h2><p>连续概率函数$p(x)$的数学定义满足以下特性：</p>
@@ -241,6 +243,10 @@
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">知识积累</a>
+        		</li>
+      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">统计分析</a>
         		</li>
@@ -440,6 +446,18 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">知识积累</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">数据挖掘</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">统计分析</a>
               </li>
              
@@ -452,11 +470,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">数据挖掘</a>
+                <a href="javascript:void(0)" class="js-tag color1">TensorFlow</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+                <a href="javascript:void(0)" class="js-tag color3">转载</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">生活</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -480,11 +506,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">转载</a>
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -492,23 +514,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">个人叙事</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">游记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">生活</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">叙事</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">心情</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -520,7 +530,7 @@ MathJax.Hub.Queue(function() {
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br/>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            缺失模块。<br>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
             2、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:

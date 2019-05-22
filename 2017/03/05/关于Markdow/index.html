@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>关于Markdow | Peter&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="将一些关于Markdown语法（包括sublime设置）记录下来，方便以后查阅。">
+<meta name="keywords" content="知识积累,转载,技术">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于Markdow">
 <meta property="og:url" content="http://yoursite.com/2017/03/05/关于Markdow/index.html">
-<meta property="og:site_name" content="Peter's Blog">
+<meta property="og:site_name" content="Peter&#39;s Blog">
 <meta property="og:description" content="将一些关于Markdown语法（包括sublime设置）记录下来，方便以后查阅。">
-<meta property="og:image" content="http://yoursite.com/\images\20170305\markdown.jpg">
-<meta property="og:updated_time" content="2017-04-13T08:34:28.412Z">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/images/20170305/markdown.jpg">
+<meta property="og:updated_time" content="2019-05-22T08:06:17.083Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于Markdow">
 <meta name="twitter:description" content="将一些关于Markdown语法（包括sublime设置）记录下来，方便以后查阅。">
-<meta name="twitter:image" content="http://yoursite.com/\images\20170305\markdown.jpg">
+<meta name="twitter:image" content="http://yoursite.com/images/20170305/markdown.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Peter&#39;s Blog" type="application/atom+xml">
   
@@ -41,7 +43,7 @@
   
 
 </head>
-
+</html>
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -181,11 +183,11 @@
 <p>从菜单 View - Show Console 或者 ctrl + ~ 快捷键，调出 console。将以下 Python 代码粘贴进去并 enter 执行，不出意外即完成安装。以下提供 ST3 和 ST2 的安装代码：</p>
 <p>Sublime Text 3：</p>
 <blockquote>
-<p>import urllib.request,os,hashlib; h = ‘2915d1851351e5ee549c20394736b442’ + ‘8bc59f460fa1548d1514676163dafc88’; pf = ‘Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( ‘<a href="http://packagecontrol.io/" target="_blank" rel="external">http://packagecontrol.io/</a>‘ + pf.replace(‘ ‘, ‘%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print(‘Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), ‘wb’ ).write(by)</p>
+<p>import urllib.request,os,hashlib; h = ‘2915d1851351e5ee549c20394736b442’ + ‘8bc59f460fa1548d1514676163dafc88’; pf = ‘Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( ‘<a href="http://packagecontrol.io/" target="_blank" rel="noopener">http://packagecontrol.io/</a>‘ + pf.replace(‘ ‘, ‘%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print(‘Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), ‘wb’ ).write(by)</p>
 </blockquote>
 <p>Sublime Text 2：</p>
 <blockquote>
-<p>import urllib2,os,hashlib; h = ‘2915d1851351e5ee549c20394736b442’ + ‘8bc59f460fa1548d1514676163dafc88’; pf = ‘Package Control.sublime-package’; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( ‘<a href="http://packagecontrol.io/" target="_blank" rel="external">http://packagecontrol.io/</a>‘ + pf.replace(‘ ‘, ‘%20’)).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), ‘wb’ ).write(by) if dh == h else None; print(‘Error validating download (got %s instead of %s), please try manual install’ % (dh, h) if dh != h else ‘Please restart Sublime Text to finish installation’)</p>
+<p>import urllib2,os,hashlib; h = ‘2915d1851351e5ee549c20394736b442’ + ‘8bc59f460fa1548d1514676163dafc88’; pf = ‘Package Control.sublime-package’; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( ‘<a href="http://packagecontrol.io/" target="_blank" rel="noopener">http://packagecontrol.io/</a>‘ + pf.replace(‘ ‘, ‘%20’)).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), ‘wb’ ).write(by) if dh == h else None; print(‘Error validating download (got %s instead of %s), please try manual install’ % (dh, h) if dh != h else ‘Please restart Sublime Text to finish installation’)</p>
 </blockquote>
 <p>按下enter之后可以看见编辑器最下面有提示正在安装，安装成功后会弹出一个README的文档。此时我们调出Command Paletter（Ctrl+Shift+P），输入pci选择install package，enter后会加载repository中的插件。搜索需要的插件按enter，等待几分钟，插件就安装好了。</p>
 <p>（2）安装可选插件<br>再次按下ctrl+shift+P打开快速菜单，键入’pcip’,回车，等待数据更新，完成后会主动显示软件列表。 在里面输入以下软件名称并回车进行安装：</p>
@@ -195,7 +197,7 @@
 </blockquote>
 <p><strong>auto-save // 可自定义的自动保存功能</strong> </p>
 <p>前两个是标准的markdown编辑与预览工具，第三个是实现实时预览的关键,耐心等待操作完成，之后关闭并重新打开Sublime Text 3。</p>
-<h2 id="2-Markdow-语法"><a href="#2-Markdow-语法" class="headerlink" title="2 Markdow 语法"></a>2 Markdow 语法</h2><p>转自<a href="http://www.cnblogs.com/hnrainll/p/3514637.html" target="_blank" rel="external">http://www.cnblogs.com/hnrainll/p/3514637.html</a></p>
+<h2 id="2-Markdow-语法"><a href="#2-Markdow-语法" class="headerlink" title="2 Markdow 语法"></a>2 Markdow 语法</h2><p>转自<a href="http://www.cnblogs.com/hnrainll/p/3514637.html" target="_blank" rel="noopener">http://www.cnblogs.com/hnrainll/p/3514637.html</a></p>
 <ol>
 <li><p>标题设置（让字体变大，和word的标题意思一样）<br>在Markdown当中设置标题，有两种方式：<br>第一种：通过在文字下方添加“=”和“-”，他们分别表示一级标题和二级标题。<br>第二种：在文字开头加上 “#”，通过“#”数量表示几级标题。（一共只有1~6级标题，1级标题字体最大）</p>
 </li>
@@ -217,7 +219,7 @@
 </li>
 <li><p>有序列表<br>使用数字后面跟上句号。（还要有空格）</p>
 </li>
-<li><p>链接（Links）<br>Markdown中有两种方式，实现链接，分别为内联方式和引用方式。<br>内联方式：This is an <code>[example link](http://example.com/)</code>.<br>引用方式：<br>I get 10 times more traffic from <code>[Google][1]</code> than from <a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="external">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="external">MSN</a>.  </p>
+<li><p>链接（Links）<br>Markdown中有两种方式，实现链接，分别为内联方式和引用方式。<br>内联方式：This is an <code>[example link](http://example.com/)</code>.<br>引用方式：<br>I get 10 times more traffic from <code>[Google][1]</code> than from <a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="noopener">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="noopener">MSN</a>.  </p>
 </li>
 </ol>
 <p><code>[1]: http://google.com/        &quot;Google&quot;</code></p>
@@ -229,7 +231,7 @@
 <li>代码（HTML中所谓的Code）<br>实现方式有两种：<br>第一种：简单文字出现一个代码框。使用<code>&lt;blockquote&gt;</code>。（<code>不是单引号而是左上角的ESC下面~中的</code>）</li>
 </ol>
 <p>第二种：漂亮的代码框，还可以自动高亮</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> i = <span class="number">0</span>;</div><div class="line">i = <span class="number">1</span>;</div><div class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i ++)</div><div class="line">&#123;</div><div class="line">	<span class="built_in">printf</span>(<span class="string">"helo markdown!\n"</span>)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">i = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i ++)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"helo markdown!\n"</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>第三种：使用Tab和四个空格。</p>
 <pre><code>int i = 0;
 i = 1;
@@ -238,16 +240,16 @@ for (int i = 0; i &lt; 100; i ++)
     printf(&quot;helo markdown!\n&quot;)
 }
 </code></pre><ol>
-<li>脚注（footnote）<br>实现方式如下：<br>hello<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top-right hint--error hint--large" aria-label="https://www.baidu.com"><a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="external">3</a></span></a></sup><br>hello<a href="hi">^hello</a></li>
+<li>脚注（footnote）<br>实现方式如下：<br>hello<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://www.baidu.com"><a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="noopener">3</a></span></a></sup><br>hello<a href="hi">^hello</a></li>
 </ol>
 <ol>
 <li><p>下划线<br>在空白行下方添加三条“-”横线。（前面讲过在文字下方添加“-”，实现的2级标题）</p>
 </li>
-<li><p>其他 尖括号 <a href="http://ibruce.info" target="_blank" rel="external">http://ibruce.info</a> bu.ru@qq.com<br>可指定编程语言, &lt;&gt;代表左右大括号<br>&lt;% codeblock [title] [lang:language] [url] [link text] %&gt;<br>code snippet<br>&lt;% endcodeblock %&gt;</p>
+<li><p>其他 尖括号 <a href="http://ibruce.info" target="_blank" rel="noopener">http://ibruce.info</a> bu.ru@qq.com<br>可指定编程语言, &lt;&gt;代表左右大括号<br>&lt;% codeblock [title] [lang:language] [url] [link text] %&gt;<br>code snippet<br>&lt;% endcodeblock %&gt;</p>
 </li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">注释: Html的注释# &lt;!-- 注释 --&gt;</div><div class="line">转义字符 Markdown中的转义字符为\, 转义的有:</div><div class="line">\\ 反斜杠</div><div class="line">\` 反引号</div><div class="line">\* 星号</div><div class="line">\_ 下划线</div><div class="line">\&#123;\&#125; 大括号</div><div class="line">\[\] 中括号</div><div class="line">\(\) 小括号</div><div class="line">\# 井号</div><div class="line">\+ 加号</div><div class="line">\- 减号</div><div class="line">\. 英文句号</div><div class="line">\! 感叹号</div></pre></td></tr></table></figure>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.baidu.com" target="_blank" rel="external">https://www.baidu.com</a><a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">注释: Html的注释# &lt;!-- 注释 --&gt;</span><br><span class="line">转义字符 Markdown中的转义字符为\, 转义的有:</span><br><span class="line">\\ 反斜杠</span><br><span class="line">\` 反引号</span><br><span class="line">\* 星号</span><br><span class="line">\_ 下划线</span><br><span class="line">\&#123;\&#125; 大括号</span><br><span class="line">\[\] 中括号</span><br><span class="line">\(\) 小括号</span><br><span class="line">\# 井号</span><br><span class="line">\+ 加号</span><br><span class="line">\- 减号</span><br><span class="line">\. 英文句号</span><br><span class="line">\! 感叹号</span><br></pre></td></tr></table></figure>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.baidu.com" target="_blank" rel="noopener">https://www.baidu.com</a><a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>
       
 
       
@@ -280,6 +282,10 @@ for (int i = 0; i &lt; 100; i ++)
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">知识积累</a>
+        		</li>
+      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">转载</a>
         		</li>
@@ -462,6 +468,18 @@ for (int i = 0; i &lt; 100; i ++)
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">知识积累</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">数据挖掘</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">统计分析</a>
               </li>
              
@@ -474,11 +492,19 @@ for (int i = 0; i &lt; 100; i ++)
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">数据挖掘</a>
+                <a href="javascript:void(0)" class="js-tag color1">TensorFlow</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+                <a href="javascript:void(0)" class="js-tag color3">转载</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">生活</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -502,11 +528,7 @@ for (int i = 0; i &lt; 100; i ++)
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">转载</a>
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -514,23 +536,11 @@ for (int i = 0; i &lt; 100; i ++)
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">个人叙事</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">游记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">生活</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">叙事</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">心情</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -542,7 +552,7 @@ for (int i = 0; i &lt; 100; i ++)
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br/>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            缺失模块。<br>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
             2、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
